@@ -1,20 +1,27 @@
 import { Close, MenuOutlined } from '@material-ui/icons';
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './styles/Header.css';
 
 const Header = () => {
+
+  const [active, setActive] = useState(false)
+
+  const showMenu = () => {
+      setActive(!active)
+  }
+
   return (
     <div className='header'>
         <div className="header__logo">
             <h1>Leedd</h1>
         </div>
 
-        <nav>
+        <nav className={active ? 'navbar active' : 'navbar'}>
             <ul>
 
                 <div className="closed">
-                    <Close className='close'/>
+                    <Close className='close' onClick={showMenu}/>
                 </div>
 
                 <li>
@@ -45,7 +52,7 @@ const Header = () => {
         </nav>
 
         <div className="changer">
-            <MenuOutlined className='menu' />
+            <MenuOutlined className='menu' onClick={showMenu} />
         </div>
 
     </div>
