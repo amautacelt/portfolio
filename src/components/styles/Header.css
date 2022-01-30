@@ -85,4 +85,8 @@ ul li a:hover {
     .changer .menu {
         display: block;
     }
+
+    .closed .close {
+        display: block;
+    }
 }
