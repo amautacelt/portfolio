@@ -28,6 +28,12 @@ const Main = () => {
         </div>
 
 
+
+        <div className="main__img">
+            <img src='' alt='' />
+        </div>
+
+
     </div>
 
 
