@@ -1,5 +1,7 @@
 import { Facebook, Instagram, LinkedIn, Pinterest, Twitter } from '@material-ui/icons';
 import React from 'react';
+
+import man from './assets/man.png'
 import './styles/Main.css';
 
 const Main = () => {
@@ -30,7 +32,7 @@ const Main = () => {
 
 
         <div className="main__img">
-            <img src='' alt='' />
+            <img src={man} alt='' />
         </div>
 
 
