@@ -2,6 +2,7 @@ import { Facebook, Instagram, LinkedIn, Pinterest, Twitter } from '@material-ui/
 import React from 'react';
 
 import man from './assets/man.png'
+
 import './styles/Main.css';
 
 const Main = () => {

@@ -1,0 +1,10 @@
+.main {
+    min-height: 100vh;
+    max-width: 100%;
+    background-color: #f8efef;
+    position: relative;
+}
+
+.main &::before,&::after {
+    ::content: '';
+}
