@@ -78,3 +78,12 @@
     text-transform: uppercase;
     font-weight: bolder;
 }
+
+.main__img {
+    clip-path: circle(45% at 50% 49%);
+    cursor: pointer;
+}
+
+.main__img img {
+    background: linear-gradient(45deg,rgb(216,46,9),rgb(62,7,189));
+}
